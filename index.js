@@ -83,7 +83,7 @@ for(const file of commandFiles){
     }
 //gen key api
 //http://45.76.255.213:3838/do_something?key=&password=woodythenoob123&action=gen&name=Apollyon&parameter=7
-
+//gen
 
     if (message.content.startsWith (prefix)){
         message.delete({ timeout: 2 })
