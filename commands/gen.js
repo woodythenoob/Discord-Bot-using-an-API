@@ -8,7 +8,7 @@ module.exports= {
     description: "will gen a key upon user entry",
     execute(message, args){
     const keytime = args.shift();
-        axios.get(`http://45.76.255.213:3838/do_something?key=&password=woodythenoob123&action=gen&name=Apollyon&parameter=${keytime}`)
+        axios.get(`http://45.76.255.213:3838/do_something?key=&password=woodythenoob123&action=gen&name=DivisionPublic&parameter=${keytime}`)
         .then(function (response) {
             let embed = new MessageEmbed();
             let generated = response.data

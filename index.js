@@ -79,17 +79,17 @@ for(const file of commandFiles){
         client.commands.get('spin').execute(message, args);
     }
     if(command === 'users'){
-        client.commands.get('users').execute(messages, args);
+        client.commands.get('users').execute(message, args);
     }
 //gen key api
 //http://45.76.255.213:3838/do_something?key=&password=woodythenoob123&action=gen&name=Apollyon&parameter=7
 
 
-    if (message.content.startsWith (prefix)){
+    /*if (message.content.startsWith (prefix)){
         message.delete({ timeout: 1 })
         .then()
         .catch(console.error);
-      }
+      }*/
 });
 
 client.login(process.env.TOKEN);
