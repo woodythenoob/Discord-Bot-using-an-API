@@ -14,8 +14,6 @@ module.exports= {
             let generated = response.data
             embed.setColor("#262526");
             embed.setDescription(`${generated}`)
-            embed.setImage('https://cdn.discordapp.com/attachments/882810481331556375/882820222682271764/Purple_Line.gif')
-            embed.setFooter('Apollyon.gg', 'https://i.imgur.com/jjvnvag.gif')
             embed.setTimestamp()
             message.channel.send(embed);
          })

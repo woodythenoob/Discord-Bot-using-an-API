@@ -8,7 +8,6 @@ module.exports= {
         let embedContent = message.content.substring(3);
         let embed = new MessageEmbed();
         embed.setColor("#262526");
-        embed.setAuthor("APOLLYON", 'https://media.discordapp.net/attachments/881624691108900875/882814652667527258/AP_NEW_FINAL_LOGO_CROPPED.gif')
         embed.addFields(
         {name: 'failed to create IPC (code a)', value: 'Script is already running.' },
         {name: 'failed to create IPC (code b)', value: 'Something big fucked up contact woody#3886' },
@@ -18,7 +17,6 @@ module.exports= {
         {name: 'discord overlay not found', value: 'reinstall discord using revo uninstaller' },
         {name: 'discord overlay invalid', value: 'reinstall discord using revo uninstaller => caused by diablo' },
         )
-        embed.setFooter('Apollyon.gg', 'https://i.imgur.com/jjvnvag.gif')
         embed.setTimestamp()
         message.channel.send(embed);
     }
