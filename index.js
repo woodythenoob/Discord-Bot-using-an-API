@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 require('dotenv').config()
-const prefix = ".";
+const prefix = ";";
 const fs = require('fs');
 const isValidCommand = (message, cmdName) => message.content.toLowerCase().startsWith(prefix + cmdName);
 
@@ -14,9 +14,8 @@ for(const file of commandFiles){
     client.commands.set(command.name, command);
 }
     client.on('ready', () => {
-        client.user.setPresence({ activities: [{ name: 'the Peasant Script Users' , type: 'WATCHING'} ] });
+        client.user.setPresence({ activities: [{ name: 'The Script Users' , type: 'WATCHING'} ] });
         console.log(`Logged in as ${client.user.tag}!`);
-        console.log('freddy is ready to hack the system');
     });
 
     client.on ('message', message =>{
@@ -64,9 +63,6 @@ for(const file of commandFiles){
     if(command === 'purge'){
         client.commands.get('purge').execute(message, args);
     }
-    if(command === 'users'){
-        client.commands.get('users').execute(message, args);
-    
     if(command === 'ip'){
         client.commands.get('ip').execute(message, args);
     }
@@ -78,16 +74,22 @@ for(const file of commandFiles){
     }
     if(command === 'message'){
         client.commands.get('message').execute(message, args);
-    } 
+    }
     if(command === 'spin'){
         client.commands.get('spin').execute(message, args);
     }
+    if(command === 'users'){
+        client.commands.get('users').execute(messages, args);
+    }
+//gen key api
+//http://45.76.255.213:3838/do_something?key=&password=woodythenoob123&action=gen&name=Apollyon&parameter=7
+
 
     if (message.content.startsWith (prefix)){
         message.delete({ timeout: 1 })
         .then()
         .catch(console.error);
       }
-}});
+});
 
 client.login(process.env.TOKEN);
