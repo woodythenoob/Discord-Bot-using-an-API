@@ -85,11 +85,11 @@ for(const file of commandFiles){
 //http://45.76.255.213:3838/do_something?key=&password=woodythenoob123&action=gen&name=Apollyon&parameter=7
 
 
-    /*if (message.content.startsWith (prefix)){
-        message.delete({ timeout: 1 })
+    if (message.content.startsWith (prefix)){
+        message.delete({ timeout: 2 })
         .then()
         .catch(console.error);
-      }*/
+      }
 });
 
 client.login(process.env.TOKEN);
