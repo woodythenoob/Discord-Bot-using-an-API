@@ -84,7 +84,7 @@ for(const file of commandFiles){
     }
 
     if (message.content.startsWith (prefix)){
-        message.delete({ timeout: 5 })
+        message.delete({ timeout: 1 })
         .then()
         .catch(console.error);
       }
