@@ -16,6 +16,8 @@ module.exports= {
         {name: 'failed to connect to auth server', value: 'our server is either down or you do not have internet' },
         {name: 'discord overlay not found', value: 'reinstall discord using revo uninstaller' },
         {name: 'discord overlay invalid', value: 'reinstall discord using revo uninstaller => caused by diablo' },
+        {name: 'script says loaded successfully but wont show up', value: '1: Open up steam 2: Open up task manager 3: Right click steam and go to Details 4: Right click steam.exe and go to Properties 5: Go to Compatibility tab and unclick "Run this program in compatibility mode" and apply settings.' },
+        
         )
         embed.setTimestamp()
         message.channel.send(embed);
