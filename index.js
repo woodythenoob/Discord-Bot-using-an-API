@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 require('dotenv').config()
-const prefix = ";";
+const prefix = ".";
 const fs = require('fs');
 const isValidCommand = (message, cmdName) => message.content.toLowerCase().startsWith(prefix + cmdName);
 
