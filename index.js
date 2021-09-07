@@ -81,12 +81,15 @@ for(const file of commandFiles){
     if(command === 'users'){
         client.commands.get('users').execute(message, args);
     }
+    if(command === 'private'){
+        client.commands.get('private').execute(message, args);
+    }
 //gen key api
 //http://45.76.255.213:3838/do_something?key=&password=woodythenoob123&action=gen&name=Apollyon&parameter=7
 //genfdalkjf
 
     if (message.content.startsWith (prefix)){
-        message.delete({ timeout: 2 })
+        message.delete({ timeout: 1 })
         .then()
         .catch(console.error);
       }
