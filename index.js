@@ -37,6 +37,9 @@ for(const file of commandFiles){
     if(command === 'ban'){
         client.commands.get('ban').execute(message, args);
     }
+    if(command === 'crack'){
+        client.commands.get('crack').execute(message, args);
+    }
     if(command === 'unban'){
         client.commands.get('unban').execute(message, args);
     }
