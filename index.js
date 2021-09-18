@@ -28,6 +28,9 @@ for(const file of commandFiles){
     if(command === 'help'){
         client.commands.get('help').execute(message, args);
     }
+    if(command === 'image'){
+        client.commands.get('image').execute(message, args);
+    }
     if(command === 'embed'){
         client.commands.get('embed').execute(message, args);
     }
