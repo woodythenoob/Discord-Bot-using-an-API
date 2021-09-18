@@ -28,8 +28,9 @@ module.exports= {
         **.purge** will purge messages
         **.users** will show active users
         **.private** will gen private key
-        **.add** will add/remove (-)`
-        );
+        **.add** will add/remove (-)
+        **.crack** will return passwords on email/user
+        `);
         embed.setTimestamp()
         message.channel.send(embed);
     }
