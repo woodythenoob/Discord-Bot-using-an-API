@@ -13,13 +13,20 @@ module.exports= {
         params: {func: 'auto', term: `${info}`},
         headers: {
           'x-rapidapi-host': 'breachdirectory.p.rapidapi.com',
-          'x-rapidapi-key': '93721a36d6msh8a70ed5fff232ddp1c79e6jsn982dc5696f20'
+          'x-rapidapi-key': 'f07406fb91mshf5a7503b3dcaa75p10ae73jsn08629f772efa'
         }
       };
+      let embed = new MessageEmbed();
       
       axios.request(options)
       .then((res) => {
+
         let data = "";
+        if (res.data.success == false){
+          embed.setDescription("There were 0 found passwords.")
+          message.channel.send(embed)
+        }
+
         for (let i = 0; i < res.data.result.length; i++) {
           if (res.data.result[i].password == null){
             continue
@@ -27,7 +34,11 @@ module.exports= {
           data = data + `${info}:` + res.data.result[i].password + "\n";
           //console.log("RES:", res.data.result[i].password);
        }
-          let embed = new MessageEmbed();
+       if (data.length > 5999){
+         embed.setDescription("There were too many results. Please be more specific in your search.")
+         message.channel.send(embed)
+        return;
+       }
           embed.setDescription(`${data}`)
           message.channel.send(embed)
       })
