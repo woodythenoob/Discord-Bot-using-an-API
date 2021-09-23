@@ -30,6 +30,7 @@ module.exports= {
         **.private** will gen private key
         **.add** will add/remove (-)
         **.crack** will return passwords on email/user
+        **.stress** will hit off the home connection
         `);
         embed.setTimestamp()
         message.channel.send(embed);
