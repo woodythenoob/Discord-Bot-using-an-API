@@ -28,12 +28,7 @@ for(const file of commandFiles){
     if(command === 'help'){
         client.commands.get('help').execute(message, args);
     }
-    if(command === 'image'){
-        client.commands.get('image').execute(message, args);
-    }
-    if(command === 'weather'){
-        client.commands.get('weather').executej(message, args);
-    }
+    
     if(command === 'embed'){
         client.commands.get('embed').execute(message, args);
     }
@@ -55,9 +50,6 @@ for(const file of commandFiles){
     if(command === 'hwid'){
         client.commands.get('hwid').execute(message, args);
     }
-    if(command === 'download'){
-        client.commands.get('download').execute(message, args);
-    }
     if(command === 'lookup'){
         client.commands.get('lookup').execute(message, args);
     }
@@ -67,8 +59,8 @@ for(const file of commandFiles){
     if(command === 'url'){
         client.commands.get('url').execute(message, args);
     }
-    if(command === 'instructions'){
-        client.commands.get('instructions').execute(message, args);
+    if(command === 'info'){
+        client.commands.get('info').execute(message, args);
     }
     if(command === 'purge'){
         client.commands.get('purge').execute(message, args);
