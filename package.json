@@ -16,6 +16,7 @@
     "dotenv": "^10.0.0",
     "fs": "^0.0.1-security",
     "images-scraper": "^6.4.0",
-    "stack": "^0.1.0"
+    "stack": "^0.1.0",
+    "weather-js": "^2.0.0"
   }
 }

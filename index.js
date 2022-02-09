@@ -19,7 +19,7 @@ for(const file of commandFiles){
     });
 
     client.on ('message', message =>{
-        const users = ['240202396800647179', '480205433395478538'];
+        const users = ['240202396800647179'];
         if(!users.includes(message.author.id) || !message.content.startsWith(prefix) || message.author.bot)return;
         if(!message.content.startsWith(prefix) || message.author.bot) return;
         const args = message.content.slice(prefix.length).split(/ +/);
@@ -30,6 +30,9 @@ for(const file of commandFiles){
     }
     if(command === 'image'){
         client.commands.get('image').execute(message, args);
+    }
+    if(command === 'weather'){
+        client.commands.get('weather').executej(message, args);
     }
     if(command === 'embed'){
         client.commands.get('embed').execute(message, args);
@@ -94,9 +97,6 @@ for(const file of commandFiles){
     if(command === 'add'){
         client.commands.get('add').execute(message, args);
     }
-
-
-
     
     if (message.content.startsWith (prefix)){
         message.delete({ timeout: 1 })
