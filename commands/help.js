@@ -16,8 +16,7 @@ module.exports= {
         **.ban** will ban key (specify reason)
         **.unban** will unban key
         **.hwid** will reset hwid
-        **.download** will give loader download
-        **.errors** shows errors with fixes
+        **.info** will give loader/instuctions/errors
         **.url** will pop up url on keys screen
         **.spin** will give user antiaim
         **.lookup** will give info on key
