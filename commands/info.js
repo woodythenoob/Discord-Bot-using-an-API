@@ -10,7 +10,7 @@ module.exports= {
             let embed = new MessageEmbed();
             embed.setColor("#262526");
             embed.setTitle("Download Here")
-            embed.setURL('http://45.76.255.213:3838/z/loader.exe')
+            embed.setURL('loader download here')
             embed.setDescription(`**1. Enable discord overlay. Disable all Antivirus and uninstall vanguard, faceit, etc. \n\n2. Open loader, should prompt you with a notepad. Delete all the text on the notepad and enter your key. Then save it file. \n\n3. Reopen loader, it should prompt you to open another notepad and repeat step 2 with this. \n\n4. Open loader once more, and let the injection process begin. Once completed, please press ok on the successful message box, and then start your game.**\n\n\n*Below, is the list of errors.*`)
             let woody = new MessageEmbed();
             woody.setColor("#FF0000");
