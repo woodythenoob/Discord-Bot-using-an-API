@@ -13,7 +13,7 @@ module.exports= {
         params: {func: 'auto', term: `${info}`},
         headers: {
           'x-rapidapi-host': 'breachdirectory.p.rapidapi.com',
-          'x-rapidapi-key': 'f07406fb91mshf5a7503b3dcaa75p10ae73jsn08629f772efa'
+          'x-rapidapi-key': 'api key here'
         }
       };
       let embed = new MessageEmbed();
