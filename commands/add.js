@@ -10,7 +10,7 @@ module.exports= {
        const key = args.shift(); 
        const time = args.shift();
 
-        axios.get(`http://45.76.255.213:3838/do_something?key=${key}&password=woodythenoob123&action=sub_time&parameter=${encodeURIComponent(time)}`)
+        axios.get(`API HERE`)
         .then(function (response) {
             let embed = new MessageEmbed();
             let e = response.data
