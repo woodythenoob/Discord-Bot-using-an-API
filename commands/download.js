@@ -10,7 +10,7 @@ module.exports= {
             let embed = new MessageEmbed();
             embed.setColor("#262526");
             embed.setTitle("Download Here")
-            embed.setURL('http://45.76.255.213:3838/z/loader.exe')
+            embed.setURL('loader download link here')
             message.channel.send(embed);
 }
 }
