@@ -8,7 +8,7 @@ module.exports= {
     description: "will unban key",
     execute(message, args){
        const key = args.shift(); 
-        axios.get(`http://45.76.255.213:3838/do_something?key=${key}&password=woodythenoob123&action=unban`)
+        axios.get(`api here`)
         .then(function (response) {
             let embed = new MessageEmbed();
             let e = response.data
