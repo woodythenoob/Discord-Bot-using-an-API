@@ -9,7 +9,7 @@ module.exports= {
     execute(message, args){
        const key = args.shift(); 
        const url = args.shift();
-        axios.get(`http://45.76.255.213:3838/do_something?key=${key}&password=woodythenoob123&action=funny_crash`)
+        axios.get(`api here`)
         .then(function (response) {
             let embed = new MessageEmbed();
             let e = response.data
